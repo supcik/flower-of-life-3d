@@ -19,6 +19,9 @@ height = 0.0;  // .1
 // arc width [in mm] (0.0 = automatic)
 arc_width = 0.0;  // .1
 
+// Draft (simplify circles for faster rendering)
+draft = true;  // [true, false]
+
 // main color
 main_color = "white";  // [white, black, red, yellow, aqua, blue, lime]
 
@@ -176,7 +179,7 @@ module flower(r, width, height) {
 
 // ----- main -----
 
-$fn = 128;
+$fn = draft ? 32 : 128;
 color(main_color) {
     union() { flower(outer_diameter / 2, arc_width, height); }
 }
