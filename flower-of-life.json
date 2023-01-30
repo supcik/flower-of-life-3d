@@ -1,0 +1,23 @@
+{
+    "parameterSets": {
+        "300mm": {
+            "arc_width": "0",
+            "height": "0",
+            "main_color": "white",
+            "outer_diameter": "300"
+        },
+        "200mm": {
+            "arc_width": "0",
+            "height": "0",
+            "main_color": "white",
+            "outer_diameter": "200"
+        },
+        "120mm": {
+            "arc_width": "0",
+            "height": "0",
+            "main_color": "white",
+            "outer_diameter": "120"
+        }
+    },
+    "fileFormatVersion": "1"
+}
